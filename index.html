@@ -1,13 +1,37 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <script src="app.js"></script>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="app.js" defer></script>
     <title>Working with DOM</title>
-</head>
-<body>
-     <header><h1>Dive in the DOM!</h1></header>
-</body>
+  </head>
+  <body>
+    <header><h1 id="main-title">Dive in the DOM!</h1></header>
+    <ul>
+        <li>item 1</li>
+        <li class="list-item">item 2</li>
+        <li class="list-item">item 3</li>
+    </ul>
+  </body>
 </html>
+
+
+<!-- const ul = document.querySelector('ul');
+undefined
+
+ul
+<ul>​…​</ul>
+​
+ul.querySelector('li:last-of-type')
+<li class=​"list-item">​…​</li>
+​
+ul.querySelector('li')
+<li>​…​</li>
+​
+document.getElementsByName('list-item')
+NodeList []length: 0[[Prototype]]: NodeList
+
+document.getElementsByClassName('list-item');
+HTMLCollection(2) [li.list-item, li.list-item] -->

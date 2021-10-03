@@ -1,4 +1,16 @@
 ![](images/domcalls.PNG)
+```ul.children```
+```ul.childNodes```
+```ul.firstChild```
+```ul.firstElementChild```
+```ul.children[1]```
+```ul.lastElementChild```
+```ul.lastChild```
+```li.parentNode```
+```li.parentElement```
+```li.closest('body')```
+```ul.previosElementSibling```
+```ul.nextElementSibling```
 
 
 # working-with-DOM
@@ -45,3 +57,5 @@ Takes an HTML tag ```(e.g. 'p')``` and returns a live ```HTMLCollection``` of ma
 More information: https://developer.mozilla.org/en-US/docs/Web/API/Element/getElementsByTagName
 
 There also is the ```getElementsByName()``` method which really isn't used commonly (https://developer.mozilla.org/en-US/docs/Web/API/Document/getElementsByName).
+
+

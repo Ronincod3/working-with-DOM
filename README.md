@@ -1,3 +1,6 @@
+![](images/domcalls.PNG)
+
+
 # working-with-DOM
 
 Here's a summary of the various methods you got to reach out to DOM elements (note: you can only query for element nodes).

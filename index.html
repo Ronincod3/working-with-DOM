@@ -6,17 +6,39 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <script src="app.js" defer></script>
     <title>Working with DOM</title>
+
+    <style>
+      .red-bg {
+        background-color: red;
+        color: white;
+      }
+
+      .visible {
+        display: block;
+      }
+
+      .invisible {
+        display: none;
+      }
+    </style>
   </head>
   <body>
     <header><h1 id="main-title">Dive in the DOM!</h1></header>
-    <ul>
-        <li>item 1</li>
+    <section class="red-bg visible">
+      <ul>
+        <li class="list-item">item 1</li>
         <li class="list-item">item 2</li>
         <li class="list-item">item 3</li>
-    </ul>
-  </body>
+      </ul>
+    </section>
+    <div class="divi">
+      <button>Toggle Button</button>
+      <button>Toggle Button 2</button>
+      <button>Add class</button>
+      <button>Remove Class</button>
+    </div>
+    </body>
 </html>
-
 
 <!-- const ul = document.querySelector('ul');
 undefined

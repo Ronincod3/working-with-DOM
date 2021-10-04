@@ -1,18 +1,12 @@
 ![](images/domcalls.PNG)
 
-:--- | :----: | ---:
-`ul.children`
-`ul.childNodes`
-`ul.firstChild`
-`ul.firstElementChild` |
-`ul.children[1]`
-`ul.lastElementChild`
-`ul.lastChild`
-`li.parentNode`|
-`li.parentElement`
-`li.closest('body')`
-`ul.previosElementSibling`
-`ul.nextElementSibling`
+|   |   |   |   
+|---|---|---|
+|`ul.children`|`ul.children[1]`|`li.parentElement`|   
+|`ul.childNodes`|`ul.lastElementChild`|`li.closest('body')`|   
+|`ul.firstChild`|`ul.lastChild`|`ul.previosElementSibling`|   
+|`ul.firstElementChild`|`li.parentNode`|`ul.nextElementSibling`|   
+
 
 # working-with-DOM
 

@@ -7,7 +7,6 @@
 |`ul.firstChild`|`ul.lastChild`|`ul.previosElementSibling`|   
 |`ul.firstElementChild`|`li.parentNode`|`ul.nextElementSibling`|   
 
-
 # working-with-DOM
 
 Here's a summary of the various methods you got to reach out to DOM elements (note: you can only query for element nodes).
@@ -57,3 +56,24 @@ Takes an HTML tag `(e.g. 'p')` and returns a live `HTMLCollection` of matched el
 More information: https://developer.mozilla.org/en-US/docs/Web/API/Element/getElementsByTagName
 
 There also is the `getElementsByName()` method which really isn't used commonly (https://developer.mozilla.org/en-US/docs/Web/API/Document/getElementsByName).
+
+
+# CREATING ELEMENTS & ADDING THEM
+
+for ```element.insertAdjacentHTML(position, text);``` the position available are the following:
+
+```
+<!-- beforebegin -->
+<p>
+    <!-- afterbegin -->
+    foo
+    <!-- beforeend -->
+</p>
+<!-- afterend -->
+```
+
+|Re-Renders document|Live Updating|   |   |   |
+|---|---|---|---|---|
+|```section.innerHTML = '<h2>A new title!</h2>';```|```div.insertAdjacentHTML('beforeend', <p>Something went wrong!</p>'```|   |   |   |
+|```section.innerHTML = section + '<h2>A new title!</h2>';```|   |   |   |   |
+|   |   |   |   |   |

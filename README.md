@@ -60,6 +60,28 @@ There also is the `getElementsByName()` method which really isn't used commonly 
 
 # CREATING ELEMENTS & ADDING THEM
 
+### CREATING ELEMENT
+```
+<ul>
+<li>1st item</li>
+<li>2nd item</li>
+<li>3rd item</li>
+<li>4rd item</li>
+<li>5th item</li>
+</ul>
+```
+
+Console debug
+```
+const list = document.querySelector('ul');
+const newLi = document.createElement('li');
+newLi.style.backgroundColor = 'blue'; //Give it style "the style can still be edited separately"
+newLi.textContent = '6th item'; //give it some content
+list.appendChild(newLi); //attach it to node.
+```
+
+
+### InsertAdjacentHTML
 for ```element.insertAdjacentHTML(position, text);``` the position available are the following:
 
 ```
@@ -72,8 +94,8 @@ for ```element.insertAdjacentHTML(position, text);``` the position available are
 <!-- afterend -->
 ```
 
-|Re-Renders document|Live Updating|   |   |   |
-|---|---|---|---|---|
-|```section.innerHTML = '<h2>A new title!</h2>';```|```div.insertAdjacentHTML('beforeend', <p>Something went wrong!</p>'```|   |   |   |
-|```section.innerHTML = section + '<h2>A new title!</h2>';```|   |   |   |   |
-|   |   |   |   |   |
+|Re-Renders document|Live Updating|   |
+|---|---|
+|```section.innerHTML = '<h2>A new title!</h2>';```|```div.insertAdjacentHTML('beforeend', <p>Something went wrong!</p>'```|   |
+|```section.innerHTML = section + '<h2>A new title!</h2>';```|   |
+|   |   |

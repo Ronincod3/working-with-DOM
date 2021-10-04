@@ -93,14 +93,6 @@ for ```element.insertAdjacentHTML(position, text);``` the position available are
 </p>
 <!-- afterend -->
 ```
-
-|Re-Renders document|Live Updating|   |
-|---|---|
-|```section.innerHTML = '<h2>A new title!</h2>';```|```div.insertAdjacentHTML('beforeend', <p>Something went wrong!</p>'```|   |
-|```section.innerHTML = section + '<h2>A new title!</h2>';```|   |
-|   |   |
-
-
 | Re-renders Document 	| Live Update 	|
 |---------------------	|-------------	|
 | ```section.innerHTML = '<h2>A new title!</h2>';```                   	| ```div.insertAdjacentHTML('beforeend', <p>Something went wrong!</p>'```          	|
